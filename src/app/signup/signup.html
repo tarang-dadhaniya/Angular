@@ -1,0 +1,39 @@
+<div class="login-split">
+  <div class="left">
+    <div class="image-wrap" role="img" aria-label="Decorative signup image"></div>
+  </div>
+
+  <div class="right">
+    <form (ngSubmit)="onSubmit()" class="login-form">
+      <div class="logo">
+        <div class="logo-circle">LOGO</div>
+      </div>
+
+      <h2 class="heading">Create a new account</h2>
+      <p class="subtitle">Join now — create an account to get started. It's quick and easy.</p>
+
+      <div class="field">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" [(ngModel)]="model.name" />
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" [(ngModel)]="model.email" />
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" [(ngModel)]="model.password" />
+      </div>
+
+      <button type="submit" class="submit">Create account</button>
+
+      <div class="success" *ngIf="successMessage">{{ successMessage }}</div>
+
+      <div class="back-to-login">
+        <a [routerLink]="['/']">← Back to login</a>
+      </div>
+    </form>
+  </div>
+</div>

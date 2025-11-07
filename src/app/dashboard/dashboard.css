@@ -1,0 +1,87 @@
+.dashboard-wrap{
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.dash-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 12px;
+  background:#ffffff;
+  border-bottom:1px solid #eef2f7;
+  box-shadow: 0 2px 6px rgba(2,6,23,0.10);
+}
+
+.title{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#0f172a
+}
+
+.header-actions{
+    display:flex;
+    align-items:center
+}
+
+.logout{
+    background:#ef4444;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:8px;
+    border:none;
+    cursor:pointer
+}
+
+.container{
+    padding:22px;
+}
+
+.welcome-card{
+    background:#ffffff;
+    padding:22px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(2,6,23,0.10);
+    margin-bottom:20px;
+    border: 1px solid #ededed;
+}
+
+.welcome-card h2{
+    margin:0 0 6px 0;
+}
+.welcome-card p{
+    margin:0;color:#6b7280;
+}
+
+.card-row{
+    display:flex;
+    gap:18px;
+    margin-top:12px;
+}
+
+.mini-card{
+    flex: 1;
+    background:#ffffff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(2,6,23,0.10);
+    border: 1px solid #ededed;
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.mini-card:hover{
+    box-shadow: 0 4px 16px rgba(2, 6, 23, 0.15);
+    transform: translateY(-2px);
+}
+.mini-card h4{
+    margin:0 0 8px 0;
+}
+
+.mini-card p{
+    margin: 0;
+    color:#6b7280;
+}
+
+@media (max-width: 900px){
+  .card-row{flex-direction:column}
+}

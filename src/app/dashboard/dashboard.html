@@ -1,0 +1,22 @@
+<div class="dashboard-wrap">
+  <header class="dash-header">
+    <div class="title">Dashboard</div>
+    <div class="header-actions">
+      <button class="logout" (click)="logout()">Logout</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="welcome-card">
+      <h2>Welcome to Your Dashboard</h2>
+      <p>You have successfully logged in.</p>
+    </div>
+
+    <div class="card-row">
+      <div class="mini-card" *ngFor="let c of cards">
+        <h4>{{ c.title }}</h4>
+        <p>{{ c.desc }}</p>
+      </div>
+    </div>
+  </div>
+</div>
